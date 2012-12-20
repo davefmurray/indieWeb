@@ -4,16 +4,22 @@
 <head>
     <title></title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen">
-
+    <script type="text/javscript">
+        $(document).ready(function sendMail() {
+            window.location.href = "mailto:me@example.com";
+        });
+    </script>
 </head>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.js"></script>
+
 <body>
+
 
 <div class="well row">
     <img class="pull-left span2 offset1" src="http://placehold.it/300x100"/>
 
-    <div class="span3">
+    <div class="span3 pull-right">
         <ul class=" inline">
             <li><a href="#twitter"><img src="img/twitter.png" alt=""/></a></li>
             <li><a href="#facebook"><img src="img/facebook.png" alt=""/></a></li>
@@ -22,73 +28,39 @@
     </div>
 </div>
 
+
+<div class="container well">
+    <div class="row">
+        <div class="span8">
+        <h1>Press Info</h1>
+        </div>
+        <div class="span3">
+            <label class=""><p class="lead"><strong>Sign up</strong> for upcoming press releases</p></label>
+            <button class="btn btn-success" onclick="sendMail()">Sign Up</button>
+        </div>
+    </div>
+</div>
+
 <div class="container">
     <div class="span4">
         <div class="row">
-            <h1>Call to Action</h1>
+            <h3>Factsheet</h3>
 
-            <p class=lead>This is your number one priority call to action.
-                It could be a kickstarter, or a iTunes link, or a call to unite the armies of middle earth...
-                More or less, what your most import action is that users should be doing.</p>
-            <center>
-                <button class="btn btn-success btn-large">Call To Action!</button>
-            </center>
+            <h3>Developer</h3>
+
+            <h3>Founded</h3>
+
+            <h3>Press Contact</h3>
+
+            <h3>Address</h3>
+
+            <h3>Phone</h3>
         </div>
     </div>
-
-    <div class="span7">
-        <iframe src="http://player.vimeo.com/video/50505446?badge=0" width="550" height="400" frameborder="0"
-                webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-    </div>
-
 </div>
 <hr>
-<div class="row offset1">
-    <div class="carousel slide span12" id="myCarousel2">
-        <div class="carousel-inner">
-            <div class="item active">
-                <ul class="thumbnails">
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x180" alt="">
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x180" alt="">
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x180" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul class="thumbnails">
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x180" alt="">
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x180" alt="">
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x180" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <a data-slide="prev" href="#myCarousel2" class="left carousel-control">&lsaquo;</a>
-        <a data-slide="next" href="#myCarousel2" class="right carousel-control">&rsaquo;</a>
-    </div>
-</div>
+
+
 
 <div class="container">
     <hr>
@@ -173,7 +145,8 @@
     <div class="row">
         <div class="span12">
             <div class="span4"></div>
-            <div class="span4">This site was made with <a href="https://github.com/savethejets/indieWeb">IndieWeb</a></div>
+            <div class="span4">This site was made with <a href="https://github.com/savethejets/indieWeb">IndieWeb</a>
+            </div>
             <div class="span2"></div>
         </div>
     </div>
