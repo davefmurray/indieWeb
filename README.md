@@ -7,3 +7,4 @@ indieWeb is a template that indie game makers can use to quickly get a game proj
 
 You just need to fork this project and insert your graphic assets and link your custom domain to the files here.
 
+see a live demo here http://savethejets.github.com/indieWeb/Index.html
